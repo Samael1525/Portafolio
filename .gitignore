@@ -1,0 +1,8 @@
+# Thumbnails locales (capturas reales de los landings)
+assets/thumbs/*
+!assets/thumbs/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

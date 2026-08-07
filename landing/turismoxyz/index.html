@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TurismoXYZ — Agencia de viajes con paquetes personalizados, destinos únicos y experiencias inolvidables.">
+    <title>TurismoXYZ | Agencia de Viajes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        // Aplica el tema guardado antes del render para evitar parpadeos
+        (function () {
+            try {
+                var t = localStorage.getItem("turismoxyz-theme");
+                if (t !== "light" && t !== "dark") {
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            } catch (e) {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Barra para volver al portafolio AyniTech -->
+    <a href="../../index.html" class="back-bar" title="Volver al portafolio AyniTech">
+        <i class="fa-solid fa-arrow-left"></i> <span>Volver al portafolio</span>
+    </a>
+
+    <!-- ======================= HEADER ======================= -->
+    <header id="header" class="site-header">
+        <div class="container nav-inner">
+            <a href="#inicio" class="logo" aria-label="TurismoXYZ — Inicio">
+                <span class="logo-mark"><i class="fa-solid fa-plane-up"></i></span>
+                Turismo<span>XYZ</span>
+            </a>
+
+            <nav id="nav" class="nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#galeria">Galería</a>
+                <a href="#testimonios">Opiniones</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil: fuera del header para evitar el blur hereditario del backdrop-filter -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Navegación móvil">
+        <div class="nav-mobile-head">
+            <a href="#inicio" class="logo">
+                <span class="logo-mark"><i class="fa-solid fa-plane-up"></i></span>
+                Turismo<span>XYZ</span>
+            </a>
+            <button id="nav-close" class="icon-btn nav-close" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="nav-mobile-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#paquetes">Paquetes</a>
+            <a href="#galeria">Galería</a>
+            <a href="#testimonios">Opiniones</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="nav-mobile-foot">
+            <div class="social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <small>© TurismoXYZ · Viajes inolvidables</small>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ======================= HERO ======================= -->
+        <section id="inicio" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-earth-americas"></i> Explora el mundo con nosotros</span>
+                    <h1>Viaja, descubre y <span class="grad">vive</span> experiencias inolvidables</h1>
+                    <p class="hero-sub">
+                        Diseñamos viajes a tu medida: playas paradisíacas, montañas épicas y
+                        ciudades llenas de historia. Tu próxima aventura comienza aquí.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#destinos" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explorar destinos</a>
+                        <a href="#contacto" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Planificar mi viaje</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="hero-avatars">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Cliente satisfecho">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Cliente satisfecho">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Cliente satisfecho">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Cliente satisfecho">
+                        </div>
+                        <div>
+                            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                            <small>4.9/5 · +2,300 reseñas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img class="main-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Playa paradisíaca">
+
+                    <div class="float-card fc-1">
+                        <span class="fc-icon teal"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <strong>+45 destinos</strong>
+                            <small>en 5 continentes</small>
+                        </div>
+                    </div>
+
+                    <div class="float-card fc-2">
+                        <span class="fc-icon amber"><i class="fa-solid fa-users"></i></span>
+                        <div>
+                            <strong>Viajes 100% personalizados</strong>
+                            <small>atención de expertos</small>
+                        </div>
+                    </div>
+
+                    <div class="float-card fc-3">
+                        <span class="fc-icon amber"><i class="fa-solid fa-shield-halved"></i></span>
+                        <div>
+                            <strong>Reserva protegida</strong>
+                            <small>cancelación flexible</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= ESTADÍSTICAS ======================= -->
+        <section class="stats" aria-label="Estadísticas de la agencia">
+            <div class="container stats-grid">
+                <div class="stat">
+                    <div class="num" data-count="12000">0</div>
+                    <small>Viajeros felices</small>
+                </div>
+                <div class="stat">
+                    <div class="num" data-count="45">0</div>
+                    <small>Destinos únicos</small>
+                </div>
+                <div class="stat">
+                    <div class="num" data-count="5">0</div>
+                    <small>Continentes</small>
+                </div>
+                <div class="stat">
+                    <div class="num" data-count="15">0</div>
+                    <small>Años de experiencia</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= DESTINOS ======================= -->
+        <section id="destinos" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-map"></i> Destinos</span>
+                    <h2>Lugares que tienes que conocer</h2>
+                    <p>Selecciona entre nuestros destinos más solicitados y déjate sorprender por cada rincón del planeta.</p>
+                </div>
+
+                <div class="destinos-grid">
+                    <article class="destino-card reveal">
+                        <div class="destino-media">
+                            <span class="destino-badge"><i class="fa-solid fa-umbrella-beach"></i> Playas</span>
+                            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80" alt="Bali, Indonesia">
+                            <div class="destino-price">$899 <small>por persona</small></div>
+                        </div>
+                        <div class="destino-body">
+                            <h3>Bali, Indonesia</h3>
+                            <div class="destino-meta">
+                                <span><i class="fa-solid fa-clock"></i> 7 días</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p>Templos milenarios, arrozales infinitos y atardeceres que quitan el aliento.</p>
+                            <a href="#contacto" class="destino-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="destino-card reveal reveal-delay-1">
+                        <div class="destino-media">
+                            <span class="destino-badge"><i class="fa-solid fa-mountain"></i> Aventura</span>
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Montañas de Patagonia">
+                            <div class="destino-price">$1,199 <small>por persona</small></div>
+                        </div>
+                        <div class="destino-body">
+                            <h3>Patagonia, Chile</h3>
+                            <div class="destino-meta">
+                                <span><i class="fa-solid fa-clock"></i> 9 días</span>
+                                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p>Glaciares imponentes, lagos turquesa y las montañas más espectaculares del sur.</p>
+                            <a href="#contacto" class="destino-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="destino-card reveal reveal-delay-2">
+                        <div class="destino-media">
+                            <span class="destino-badge"><i class="fa-solid fa-city"></i> Ciudades</span>
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="París, Francia">
+                            <div class="destino-price">$759 <small>por persona</small></div>
+                        </div>
+                        <div class="destino-body">
+                            <h3>París, Francia</h3>
+                            <div class="destino-meta">
+                                <span><i class="fa-solid fa-clock"></i> 5 días</span>
+                                <span><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                            <p>La ciudad del amor: arte, gastronomía y rincones mágicos a cada paso.</p>
+                            <a href="#contacto" class="destino-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="destino-card reveal">
+                        <div class="destino-media">
+                            <span class="destino-badge"><i class="fa-solid fa-umbrella-beach"></i> Playas</span>
+                            <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=900&q=80" alt="Santorini, Grecia">
+                            <div class="destino-price">$1,049 <small>por persona</small></div>
+                        </div>
+                        <div class="destino-body">
+                            <h3>Santorini, Grecia</h3>
+                            <div class="destino-meta">
+                                <span><i class="fa-solid fa-clock"></i> 6 días</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p>Casas blancas, cúpulas azules y las mejores puestas de sol del Mediterráneo.</p>
+                            <a href="#contacto" class="destino-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="destino-card reveal reveal-delay-1">
+                        <div class="destino-media">
+                            <span class="destino-badge"><i class="fa-solid fa-city"></i> Cultura</span>
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80" alt="Tokio, Japón">
+                            <div class="destino-price">$1,399 <small>por persona</small></div>
+                        </div>
+                        <div class="destino-body">
+                            <h3>Tokio, Japón</h3>
+                            <div class="destino-meta">
+                                <span><i class="fa-solid fa-clock"></i> 8 días</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p>Neones futuristas y templos ancestrales: una fusión única de tradición y modernidad.</p>
+                            <a href="#contacto" class="destino-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="destino-card reveal reveal-delay-2">
+                        <div class="destino-media">
+                            <span class="destino-badge"><i class="fa-solid fa-mountain-sun"></i> Aventura</span>
+                            <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=900&q=80" alt="Machu Picchu, Perú">
+                            <div class="destino-price">$949 <small>por persona</small></div>
+                        </div>
+                        <div class="destino-body">
+                            <h3>Machu Picchu, Perú</h3>
+                            <div class="destino-meta">
+                                <span><i class="fa-solid fa-clock"></i> 6 días</span>
+                                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p>Camina la ruta del Inca y descubre una de las siete maravillas del mundo.</p>
+                            <a href="#contacto" class="destino-link">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PAQUETES ======================= -->
+        <section id="paquetes" class="section section-tinted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-tags"></i> Paquetes</span>
+                    <h2>Elige el viaje perfecto</h2>
+                    <p>Planes pensados para cada tipo de viajero. Todos incluyen seguro, asistencia 24/7 y asesoría personalizada.</p>
+                </div>
+
+                <div class="paquetes-grid">
+                    <article class="paquete reveal">
+                        <span class="paq-icon teal"><i class="fa-solid fa-paper-plane"></i></span>
+                        <h3>Básico</h3>
+                        <div class="price">$499 <small>/ persona</small></div>
+                        <p class="paq-sub">Para escapadas cortas y viajeros espontáneos.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Vuelos ida y vuelta</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 3 noches de hotel</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Traslados al aeropuerto</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Seguro de viaje básico</li>
+                            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Tour guiado</li>
+                            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Guía en español</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-ghost">Reservar paquete</a>
+                    </article>
+
+                    <article class="paquete featured reveal reveal-delay-1">
+                        <span class="featured-tag"><i class="fa-solid fa-star"></i> Más popular</span>
+                        <span class="paq-icon amber"><i class="fa-solid fa-rocket"></i></span>
+                        <h3>Premium</h3>
+                        <div class="price">$899 <small>/ persona</small></div>
+                        <p class="paq-sub">El equilibrio perfecto entre comodidad y aventura.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Vuelos ida y vuelta</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 5 noches en hotel 4★</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Traslados privados</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Tour guiado de medio día</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Seguro de viaje completo</li>
+                            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Experiencias exclusivas</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-accent">Reservar paquete</a>
+                    </article>
+
+                    <article class="paquete reveal reveal-delay-2">
+                        <span class="paq-icon slate"><i class="fa-solid fa-crown"></i></span>
+                        <h3>Luxury</h3>
+                        <div class="price">$1,699 <small>/ persona</small></div>
+                        <p class="paq-sub">El máximo lujo para una experiencia inolvidable.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Vuelos en clase ejecutiva</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 7 noches en hotel 5★</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Chofer y traslados VIP</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Experiencias exclusivas</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Guía privado en español</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Seguro premium + asistencia</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-ghost">Reservar paquete</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= GALERÍA ======================= -->
+        <section id="galeria" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-images"></i> Galería</span>
+                    <h2>Momentos que ya son historia</h2>
+                    <p>Una muestra visual de los destinos que nuestros viajeros han explorado.</p>
+                </div>
+
+                <div class="galeria-grid">
+                    <figure class="g-item tall reveal">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" alt="Playa tropical">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Maldivas</figcaption>
+                    </figure>
+                    <figure class="g-item reveal">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80" alt="Costa de Amalfi">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Amalfi, Italia</figcaption>
+                    </figure>
+                    <figure class="g-item reveal reveal-delay-1">
+                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=80" alt="Montañas nevadas">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Alpes Suizos</figcaption>
+                    </figure>
+                    <figure class="g-item wide reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80" alt="Sídney, Australia">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Sídney, Australia</figcaption>
+                    </figure>
+                    <figure class="g-item reveal">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubái">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Dubái, EAU</figcaption>
+                    </figure>
+                    <figure class="g-item tall reveal reveal-delay-1">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80" alt="Montañas del Himalaya">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Himalaya</figcaption>
+                    </figure>
+                    <figure class="g-item reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80" alt="Taj Mahal">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Taj Mahal, India</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= TESTIMONIOS ======================= -->
+        <section id="testimonios" class="section section-tinted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-heart"></i> Opiniones</span>
+                    <h2>Lo que dicen nuestros viajeros</h2>
+                    <p>Miles de personas ya vivieron su aventura con nosotros. Estas son algunas de sus historias.</p>
+                </div>
+
+                <div class="testimonios-grid">
+                    <article class="testimonio reveal">
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"El viaje a Bali superó todas mis expectativas. La organización fue impecable y el itinerario, perfecto. ¡Repetiré sin dudarlo!"</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Foto de María González">
+                            <div>
+                                <strong>María González</strong>
+                                <small>Viajó a Bali</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonio reveal reveal-delay-1">
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Paquete Premium a la Patagonia: todo el tiempo acompañados por un guía increíble. La atención al detalle fue de otro nivel."</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Foto de Carlos Ruiz">
+                            <div>
+                                <strong>Carlos Ruiz</strong>
+                                <small>Viajó a Patagonia</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonio reveal reveal-delay-2">
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                        <p>"Nuestra luna de miel en Santorini fue un sueño hecho realidad. Se preocuparon por cada detalle, incluso por las reservas de restaurantes."</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Foto de Ana Torres">
+                            <div>
+                                <strong>Ana Torres</strong>
+                                <small>Viajó a Santorini</small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= CONTACTO ======================= -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-envelope"></i> Contacto</span>
+                    <h2>Planifica tu próximo viaje</h2>
+                    <p>Cuéntanos tus sueños y nuestro equipo de expertos los convertirá en un itinerario real.</p>
+                </div>
+
+                <div class="contacto-grid">
+                    <div class="contacto-info reveal">
+                        <h3>Hablemos de tu aventura</h3>
+                        <p>Estamos disponibles para responder tus dudas y diseñar el viaje perfecto contigo.</p>
+                        <ul class="c-list">
+                            <li><i class="fa-solid fa-location-dot"></i> Av. Las Palmeras 1234, Lima</li>
+                            <li><i class="fa-solid fa-phone"></i> +51 987 654 321</li>
+                            <li><i class="fa-solid fa-envelope"></i> hola@turismoxyz.com</li>
+                            <li><i class="fa-solid fa-clock"></i> Lun–Sáb · 9:00 a 19:00</li>
+                        </ul>
+                    </div>
+
+                    <form id="contact-form" class="c-form reveal reveal-delay-1" novalidate>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="destino">Destino de interés</label>
+                                <select id="destino" name="destino">
+                                    <option value="bali">Bali, Indonesia</option>
+                                    <option value="patagonia">Patagonia, Chile</option>
+                                    <option value="paris">París, Francia</option>
+                                    <option value="santorini">Santorini, Grecia</option>
+                                    <option value="tokio">Tokio, Japón</option>
+                                    <option value="machu">Machu Picchu, Perú</option>
+                                    <option value="otro">Otro destino</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="viajeros">Viajeros</label>
+                                <select id="viajeros" name="viajeros">
+                                    <option value="1">1 viajero</option>
+                                    <option value="2" selected>2 viajeros</option>
+                                    <option value="3">3 viajeros</option>
+                                    <option value="4">4+ viajeros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="mensaje">Cuéntanos sobre tu viaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Fechas, intereses, presupuesto..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar solicitud
+                        </button>
+                        <p class="form-note"><i class="fa-solid fa-lock"></i> Tus datos están protegidos. Sin spam, prometido.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="newsletter reveal">
+                <div>
+                    <h3><i class="fa-solid fa-envelope-open-text"></i> No te pierdas nuestras ofertas</h3>
+                    <p>Suscríbete y recibe promociones exclusivas antes que nadie.</p>
+                </div>
+                <form class="nl-form" novalidate>
+                    <input type="email" placeholder="Tu correo electrónico" aria-label="Correo para el boletín" required>
+                    <button type="submit" class="btn">Suscribirme</button>
+                </form>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-plane-up"></i></span>
+                        Turismo<span>XYZ</span>
+                    </a>
+                    <p class="footer-about">
+                        Agencia de viajes comprometida con hacer realidad las aventuras de nuestros
+                        viajeros desde hace más de 15 años.
+                    </p>
+                    <div class="social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#paquetes">Paquetes</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de cancelación</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +51 987 654 321</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> hola@turismoxyz.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Av. Las Palmeras 1234</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="year">2026</span> TurismoXYZ. Todos los derechos reservados.</span>
+                <span class="made">Hecho con <i class="fa-solid fa-heart"></i> para viajeros del mundo</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================= VOLVER ARRIBA ======================= -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
