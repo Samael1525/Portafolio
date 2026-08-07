@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/portfolio.css">
 
@@ -30,27 +30,25 @@
 
 <body>
 
-    <!-- ======================= HEADER ======================= -->
-    <header id="header" class="site-header">
-        <div class="container nav-inner">
-            <a href="#inicio" class="logo" aria-label="AyniTech — Inicio">
-                <span class="logo-mark"><i class="fa-solid fa-laptop-code"></i></span>
-                Ayni<span>Tech</span>
+    <!-- ======================= TOP BAR ======================= -->
+    <header id="header" class="topbar">
+        <div class="container topbar-inner">
+            <a href="#inicio" class="wordmark" aria-label="AyniTech — Inicio">
+                Ayni<span class="wm-dot">Tech</span>
             </a>
 
-            <nav id="nav" class="nav" aria-label="Navegación principal">
+            <nav class="topnav" aria-label="Navegación principal">
                 <a href="#proyectos">Proyectos</a>
-                <a href="#sobre">Sobre mí</a>
+                <a href="#proceso">Proceso</a>
                 <a href="#contacto">Contacto</a>
             </nav>
 
-            <div class="nav-actions">
-                <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+            <div class="topbar-actions">
+                <button id="theme-toggle" class="tbtn theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
                     <i class="fa-solid fa-moon"></i>
                     <i class="fa-solid fa-sun"></i>
                 </button>
-                <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Cotiza tu landing</a>
-                <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <button id="nav-toggle" class="tbtn nav-toggle" aria-label="Abrir menú" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-xmark"></i>
                 </button>
@@ -59,23 +57,20 @@
     </header>
 
     <!-- Menú móvil -->
-    <nav id="nav-mobile" class="nav-mobile" aria-label="Navegación móvil">
-        <div class="nav-mobile-head">
-            <a href="#inicio" class="logo">
-                <span class="logo-mark"><i class="fa-solid fa-laptop-code"></i></span>
-                Ayni<span>Tech</span>
-            </a>
-            <button id="nav-close" class="icon-btn nav-close" aria-label="Cerrar menú">
+    <nav id="nav-mobile" class="drawer" aria-label="Navegación móvil">
+        <div class="drawer-head">
+            <span class="wordmark">Ayni<span class="wm-dot">Tech</span></span>
+            <button id="nav-close" class="tbtn nav-close" aria-label="Cerrar menú">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
-        <div class="nav-mobile-links">
+        <div class="drawer-links">
             <a href="#proyectos">Proyectos</a>
-            <a href="#sobre">Sobre mí</a>
+            <a href="#proceso">Proceso</a>
             <a href="#contacto">Contacto</a>
         </div>
-        <div class="nav-mobile-foot">
-            <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Cotiza tu landing</a>
+        <div class="drawer-foot">
+            <a href="#contacto" class="btn btn-terra">Escríbeme</a>
             <small>© AyniTech · Portafolio</small>
         </div>
     </nav>
@@ -85,185 +80,251 @@
         <!-- ======================= HERO ======================= -->
         <section id="inicio" class="hero">
             <div class="container hero-inner">
-                <div class="hero-content">
-                    <span class="hero-badge"><i class="fa-solid fa-rocket"></i> Landing pages que convierten</span>
-                    <h1>Diseño y desarrollo de <span class="grad">landing pages</span> para tu negocio</h1>
+
+                <div class="hero-text">
+                    <p class="mono-label"><span class="dot"></span> Portafolio de landing pages — 2026</p>
+
+                    <h1 class="display">Landing pages que se <em>sienten</em> bien.</h1>
+
                     <p class="hero-sub">
-                        Cada proyecto de este portafolio es un ejemplo real de lo que puedo crear:
-                        páginas rápidas, modernas y pensadas para convertir visitas en clientes.
+                        Diseño y desarrollo de páginas claras, cálidas y rápidas, pensadas para
+                        convertir visitas en clientes. Sin plantillas genéricas: cada proyecto
+                        tiene la identidad de tu negocio.
                     </p>
+
                     <div class="hero-actions">
-                        <a href="#proyectos" class="btn btn-primary"><i class="fa-solid fa-eye"></i> Ver proyectos</a>
-                        <a href="#contacto" class="btn btn-ghost"><i class="fa-solid fa-comments"></i> Hablemos</a>
+                        <a href="#proyectos" class="btn btn-terra"><i class="fa-solid fa-arrow-down-long"></i> Ver proyectos</a>
+                        <a href="#contacto" class="btn btn-line">Hablemos</a>
                     </div>
-                    <div class="hero-trust">
-                        <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-                        <small>Diseño 100% responsive · Carga rápida · SEO básico incluido</small>
+
+                    <p class="hero-note"><i class="fa-solid fa-circle-check"></i> HTML · CSS · JavaScript · 100% responsive</p>
+                </div>
+
+                <div class="hero-showcase">
+                    <div class="blob blob-1"></div>
+                    <div class="blob blob-2"></div>
+
+                    <div class="browser browser-back">
+                        <div class="browser-bar">
+                            <span class="dots"><i></i><i></i><i></i></span>
+                            <span class="url">cordillera-tours.pe</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Demo de Cordillera Tours">
+                    </div>
+
+                    <div class="browser browser-front">
+                        <div class="browser-bar">
+                            <span class="dots"><i></i><i></i><i></i></span>
+                            <span class="url">turismoxyz.com</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Demo de TurismoXYZ">
                     </div>
                 </div>
 
-                <div class="hero-visual">
-                    <img class="main-img" src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=80" alt="Landing pages en dispositivos">
-
-                    <div class="float-card fc-1">
-                        <span class="fc-icon violet"><i class="fa-solid fa-code"></i></span>
-                        <div>
-                            <strong>HTML + CSS + JS</strong>
-                            <small>100% personalizado</small>
-                        </div>
-                    </div>
-
-                    <div class="float-card fc-2">
-                        <span class="fc-icon amber"><i class="fa-solid fa-mobile-screen-button"></i></span>
-                        <div>
-                            <strong>Responsive</strong>
-                            <small>se ve bien en todo</small>
-                        </div>
-                    </div>
-
-                    <div class="float-card fc-3">
-                        <span class="fc-icon amber"><i class="fa-solid fa-gauge-high"></i></span>
-                        <div>
-                            <strong>Carga rápida</strong>
-                            <small>optimizada para Google</small>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
+
+        <!-- ======================= MARQUEE ======================= -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>✳ Diseño a medida</span>
+                <span>✳ Desarrollo limpio</span>
+                <span>✳ 100% responsive</span>
+                <span>✳ Carga rápida</span>
+                <span>✳ SEO básico</span>
+                <span>✳ Entrega rápida</span>
+                <span>✳ Diseño a medida</span>
+                <span>✳ Desarrollo limpio</span>
+                <span>✳ 100% responsive</span>
+                <span>✳ Carga rápida</span>
+                <span>✳ SEO básico</span>
+                <span>✳ Entrega rápida</span>
+            </div>
+        </div>
 
         <!-- ======================= PROYECTOS ======================= -->
         <section id="proyectos" class="section">
             <div class="container">
-                <div class="section-head reveal">
-                    <span class="eyebrow"><i class="fa-solid fa-folder-open"></i> Proyectos</span>
-                    <h2>Mi portafolio</h2>
-                    <p>Haz clic en "Ver demo" para explorar cada landing page como si estuviera en línea.</p>
+
+                <div class="sec-head reveal">
+                    <p class="mono-label">01 — Proyectos</p>
+                    <h2 class="display">Trabajos recientes</h2>
                 </div>
 
-                <div class="proyectos-grid">
+                <!-- TurismoXYZ -->
+                <article class="work-row reveal">
+                    <div class="work-num" aria-hidden="true">01</div>
 
-                    <!-- TurismoXYZ -->
-                    <article class="proyecto reveal">
-                        <div class="proy-media">
-                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Landing de agencia de viajes">
-                            <span class="proy-badge"><i class="fa-solid fa-plane"></i> Turismo</span>
-                        </div>
-                        <div class="proy-body">
-                            <h3>TurismoXYZ</h3>
-                            <p>Agencia de viajes con destinos, paquetes, galería, testimonios y formulario de contacto en un solo lugar.</p>
-                            <div class="tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                    <div class="work-media">
+                        <div class="browser">
+                            <div class="browser-bar">
+                                <span class="dots"><i></i><i></i><i></i></span>
+                                <span class="url">turismoxyz.com</span>
                             </div>
-                            <div class="proy-actions">
-                                <a href="landing/turismoxyz/" class="btn btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Ver demo</a>
-                                <a href="https://github.com/Samael1525/Portafolio" class="btn btn-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Landing de agencia de viajes TurismoXYZ">
                         </div>
-                    </article>
+                    </div>
 
-                    <!-- Cordillera Tours -->
-                    <article class="proyecto reveal reveal-delay-1">
-                        <div class="proy-media">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Landing de tours de montaña">
-                            <span class="proy-badge"><i class="fa-solid fa-mountain"></i> Aventura</span>
+                    <div class="work-body">
+                        <p class="mono-label cat"><i class="fa-solid fa-plane"></i> Turismo</p>
+                        <h3 class="display work-title">TurismoXYZ</h3>
+                        <p>
+                            Agencia de viajes con destinos, paquetes, galería, testimonios y
+                            formulario de contacto en una sola página.
+                        </p>
+                        <div class="chips">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
-                        <div class="proy-body">
-                            <h3>Cordillera Tours Huaraz</h3>
-                            <p>Tours por los Andes con catálogo de expediciones, servicios, galería y reserva directa por WhatsApp.</p>
-                            <div class="tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="proy-actions">
-                                <a href="landing/cordillera/" class="btn btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Ver demo</a>
-                                <a href="https://github.com/Samael1525/Portafolio" class="btn btn-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
-                            </div>
+                        <div class="work-links">
+                            <a href="landing/turismoxyz/" class="btn btn-line btn-sm"><i class="fa-solid fa-up-right-from-square"></i> Ver demo</a>
+                            <a href="https://github.com/Samael1525/Portafolio" class="link-arrow" target="_blank" rel="noopener">Código <i class="fa-brands fa-github"></i></a>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <!-- Próximo proyecto -->
-                    <article class="proyecto proyecto-next reveal reveal-delay-2">
-                        <div class="proy-media next-media">
-                            <i class="fa-solid fa-plus"></i>
+                <!-- Cordillera Tours -->
+                <article class="work-row reveal">
+                    <div class="work-num" aria-hidden="true">02</div>
+
+                    <div class="work-media">
+                        <div class="browser">
+                            <div class="browser-bar">
+                                <span class="dots"><i></i><i></i><i></i></span>
+                                <span class="url">cordillera-tours.pe</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Landing de tours por los Andes Cordillera Tours">
                         </div>
-                        <div class="proy-body">
-                            <h3>Tu proyecto aquí</h3>
-                            <p>¿Tienes un negocio y quieres una landing que venda? Este espacio está reservado para tu próxima idea.</p>
-                            <div class="proy-actions">
-                                <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contáctame</a>
+                    </div>
+
+                    <div class="work-body">
+                        <p class="mono-label cat"><i class="fa-solid fa-mountain"></i> Aventura</p>
+                        <h3 class="display work-title">Cordillera Tours</h3>
+                        <p>
+                            Tours por los Andes con catálogo de expediciones, servicios, galería
+                            y reserva directa por WhatsApp.
+                        </p>
+                        <div class="chips">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="landing/cordillera/" class="btn btn-line btn-sm"><i class="fa-solid fa-up-right-from-square"></i> Ver demo</a>
+                            <a href="https://github.com/Samael1525/Portafolio" class="link-arrow" target="_blank" rel="noopener">Código <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tu proyecto aquí -->
+                <article class="work-row work-next reveal">
+                    <div class="work-num" aria-hidden="true">03</div>
+
+                    <div class="work-media">
+                        <div class="browser browser-empty">
+                            <div class="browser-bar">
+                                <span class="dots"><i></i><i></i><i></i></span>
+                                <span class="url">tu-negocio.pe</span>
+                            </div>
+                            <div class="empty-state">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Tu landing aquí</span>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
-                </div>
+                    <div class="work-body">
+                        <p class="mono-label cat"><i class="fa-solid fa-star"></i> Próximo</p>
+                        <h3 class="display work-title">Tu proyecto</h3>
+                        <p>
+                            ¿Tienes un negocio y quieres una landing que venda? Este espacio
+                            está reservado para tu próxima idea.
+                        </p>
+                        <div class="work-links">
+                            <a href="#contacto" class="btn btn-terra btn-sm"><i class="fa-solid fa-paper-plane"></i> Contáctame</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <!-- ======================= SOBRE MÍ ======================= -->
-        <section id="sobre" class="section section-tinted">
+        <!-- ======================= PROCESO ======================= -->
+        <section id="proceso" class="section section-sage">
             <div class="container">
-                <div class="section-head reveal">
-                    <span class="eyebrow"><i class="fa-solid fa-user"></i> Sobre mí</span>
-                    <h2>¿Qué puedo hacer por ti?</h2>
-                    <p>Creo páginas web a medida, sin plantillas genéricas, para que tu negocio destaque.</p>
+
+                <div class="sec-head reveal">
+                    <p class="mono-label mono-on">02 — Proceso</p>
+                    <h2 class="display display-on">Cómo trabajo</h2>
                 </div>
 
-                <div class="serv-grid">
-                    <article class="serv-card reveal">
-                        <span class="serv-icon violet"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
-                        <h3>Diseño a medida</h3>
-                        <p>Cada landing se diseña según tu marca, tus colores y tu tipo de cliente. Nada genérico.</p>
-                    </article>
-                    <article class="serv-card reveal reveal-delay-1">
-                        <span class="serv-icon amber"><i class="fa-solid fa-code"></i></span>
-                        <h3>Desarrollo limpio</h3>
-                        <p>Código HTML, CSS y JavaScript claro y ordenado. Fácil de actualizar y de mantener.</p>
-                    </article>
-                    <article class="serv-card reveal reveal-delay-2">
-                        <span class="serv-icon violet"><i class="fa-solid fa-mobile-screen-button"></i></span>
-                        <h3>100% responsive</h3>
-                        <p>Tu landing se verá perfecta en celular, tablet y computadora. Prueba cada demo.</p>
-                    </article>
-                    <article class="serv-card reveal reveal-delay-1">
-                        <span class="serv-icon amber"><i class="fa-solid fa-rocket"></i></span>
-                        <h3>Lista para publicar</h3>
-                        <p>Te entrego el proyecto listo para subir a GitHub Pages, Netlify o donde prefieras.</p>
-                    </article>
-                </div>
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step-num">01</span>
+                        <div>
+                            <h3 class="step-title">Investigación</h3>
+                            <p>Hablemos de tu negocio, tu cliente ideal y lo que quieres lograr. Defino el mensaje y la estructura.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">02</span>
+                        <div>
+                            <h3 class="step-title">Diseño</h3>
+                            <p>Propongo una dirección visual a tu medida: colores, tipografía y composición que representen tu marca.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">03</span>
+                        <div>
+                            <h3 class="step-title">Desarrollo</h3>
+                            <p>Construyo la página con HTML, CSS y JavaScript limpios, rápidos y 100% responsive.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">04</span>
+                        <div>
+                            <h3 class="step-title">Entrega</h3>
+                            <p>Te la dejo lista para publicar en GitHub Pages, Netlify o tu hosting, con guía de uso incluida.</p>
+                        </div>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+        <!-- ======================= CITA ======================= -->
+        <section class="quote-band">
+            <div class="container">
+                <blockquote class="reveal">
+                    «El buen diseño no se nota. Se <em>siente</em>: la gente encuentra lo que busca,
+                    entiende el mensaje y se siente en confianza».
+                    <cite>— AyniTech</cite>
+                </blockquote>
             </div>
         </section>
 
         <!-- ======================= CONTACTO ======================= -->
         <section id="contacto" class="section">
             <div class="container">
-                <div class="cta-card reveal">
-                    <div class="cta-content">
-                        <span class="eyebrow"><i class="fa-solid fa-envelope"></i> Contacto</span>
-                        <h2>¿Listo para tener tu landing page?</h2>
-                        <p>Cuéntame sobre tu negocio y te propongo un diseño que convierta visitas en clientes.</p>
-                        <a href="https://wa.me/51999999999" class="btn btn-wa btn-lg" target="_blank" rel="noopener">
+                <div class="contact-card reveal">
+                    <div class="contact-text">
+                        <p class="mono-label">03 — Contacto</p>
+                        <h2 class="display">¿Listo para tu landing page?</h2>
+                        <p>
+                            Cuéntame sobre tu negocio y te propongo un diseño que convierta
+                            visitas en clientes. Respuesta en menos de 24 horas.
+                        </p>
+                        <a href="https://wa.me/51999999999" class="btn btn-terra btn-lg" target="_blank" rel="noopener">
                             <i class="fa-brands fa-whatsapp"></i> Escríbeme por WhatsApp
                         </a>
-                        <ul class="c-list">
-                            <li><i class="fa-solid fa-envelope"></i> hola@aynitech.pe</li>
-                            <li><i class="fa-brands fa-github"></i> github.com/Samael1525</li>
-                            <li><i class="fa-solid fa-clock"></i> Respuesta en menos de 24 h</li>
-                        </ul>
                     </div>
-                    <div class="cta-visual">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80" alt="Trabajo de desarrollo web">
-                        <div class="cta-float">
-                            <span class="fc-icon violet"><i class="fa-solid fa-check"></i></span>
-                            <div>
-                                <strong>Proyectos 2 a 5 días</strong>
-                                <small>plazos claros y cumplidos</small>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="contact-list">
+                        <li><span><i class="fa-solid fa-envelope"></i></span> hola@aynitech.pe</li>
+                        <li><span><i class="fa-brands fa-github"></i></span> github.com/Samael1525</li>
+                        <li><span><i class="fa-solid fa-clock"></i></span> Respuesta en menos de 24 h</li>
+                        <li><span><i class="fa-solid fa-location-dot"></i></span> Perú · 100% remoto</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -271,57 +332,29 @@
     </main>
 
     <!-- ======================= FOOTER ======================= -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#inicio" class="logo">
-                        <span class="logo-mark"><i class="fa-solid fa-laptop-code"></i></span>
-                        Ayni<span>Tech</span>
-                    </a>
-                    <p class="footer-about">
-                        Portafolio de landing pages. Diseño y desarrollo web para negocios
-                        que quieren vender más en internet.
-                    </p>
-                    <div class="social">
-                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Portafolio</h4>
-                    <ul>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#sobre">Sobre mí</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Demos</h4>
-                    <ul>
-                        <li><a href="landing/turismoxyz/">TurismoXYZ</a></li>
-                        <li><a href="landing/cordillera/">Cordillera Tours</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li><a href="https://wa.me/51999999999" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i> hola@aynitech.pe</a></li>
-                        <li><a href="https://github.com/Samael1525" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                    </ul>
-                </div>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#inicio" class="wordmark">Ayni<span class="wm-dot">Tech</span></a>
+                <p>Landing pages que se sienten bien. Diseño y desarrollo para negocios que quieren vender más.</p>
             </div>
 
-            <div class="footer-bottom">
-                <span>© <span id="year">2026</span> AyniTech. Todos los derechos reservados.</span>
-                <span class="made">Hecho con <i class="fa-solid fa-heart"></i> y mucho café</span>
+            <nav class="footer-nav" aria-label="Navegación del pie">
+                <a href="#proyectos">Proyectos</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="year">2026</span> AyniTech. Todos los derechos reservados.</span>
+            <span class="made">Hecho con <i class="fa-solid fa-heart"></i> y mucho café</span>
         </div>
     </footer>
 
@@ -361,7 +394,7 @@
                 });
             }
 
-            /* ---------- Header al hacer scroll ---------- */
+            /* ---------- Top bar al hacer scroll ---------- */
             var header = document.getElementById("header");
             var backToTop = document.getElementById("back-to-top");
 
@@ -380,16 +413,16 @@
             }
 
             /* ---------- Menú móvil ---------- */
-            var nav = document.getElementById("nav-mobile");
+            var drawer = document.getElementById("nav-mobile");
             var navToggle = document.getElementById("nav-toggle");
             var navClose = document.getElementById("nav-close");
             var overlay = document.createElement("div");
-            overlay.className = "nav-overlay";
+            overlay.className = "drawer-overlay";
             document.body.appendChild(overlay);
 
             function closeNav() {
-                if (!nav) return;
-                nav.classList.remove("open");
+                if (!drawer) return;
+                drawer.classList.remove("open");
                 if (navToggle) navToggle.classList.remove("active");
                 overlay.classList.remove("show");
                 if (navToggle) navToggle.setAttribute("aria-expanded", "false");
@@ -397,18 +430,18 @@
             }
 
             function toggleNav() {
-                var open = nav.classList.toggle("open");
+                var open = drawer.classList.toggle("open");
                 if (navToggle) navToggle.classList.toggle("active", open);
                 overlay.classList.toggle("show", open);
                 if (navToggle) navToggle.setAttribute("aria-expanded", open ? "true" : "false");
                 document.body.style.overflow = open ? "hidden" : "";
             }
 
-            if (nav && navToggle) {
+            if (drawer && navToggle) {
                 navToggle.addEventListener("click", toggleNav);
                 overlay.addEventListener("click", closeNav);
                 if (navClose) navClose.addEventListener("click", closeNav);
-                nav.querySelectorAll("a").forEach(function (link) {
+                drawer.querySelectorAll("a").forEach(function (link) {
                     link.addEventListener("click", closeNav);
                 });
             }
