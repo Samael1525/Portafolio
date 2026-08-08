@@ -1,4 +1,4 @@
-# AyniTech — Portafolio de Landing Pages
+# AYNIT — Portafolio de Landing Pages
 
 Portafolio de landing pages creadas con **HTML, CSS y JavaScript** puro (sin frameworks).
 
@@ -10,6 +10,7 @@ Portafolio de landing pages creadas con **HTML, CSS y JavaScript** puro (sin fra
 ```
 ├── index.html              ← Vitrina (portafolio)
 ├── css/portfolio.css       ← Estilos de la vitrina
+├── assets/LOGO_AYNI.svg    ← Logo de marca
 ├── assets/thumbs/          ← Capturas reales de cada landing
 ├── landing/
 │   ├── turismoxyz/         ← Landing de agencia de viajes
@@ -36,13 +37,13 @@ Portafolio de landing pages creadas con **HTML, CSS y JavaScript** puro (sin fra
    (apunta siempre a `../../index.html`):
 
    ```html
-   <a href="../../index.html" class="back-bar" title="Volver al portafolio AyniTech">
+   <a href="../../index.html" class="back-bar" title="Volver al portafolio AYNIT">
        <i class="fa-solid fa-arrow-left"></i> <span>Volver al portafolio</span>
    </a>
    ```
 
-3. **Registra la tarjeta** en `index.html` copiando un `<article class="proyecto">`
-   existente y cambiando imagen, título, descripción, tags y links
+3. **Registra la fila** en `index.html` copiando un `<article class="work-row">`
+   existente y cambiando imagen, título, descripción, chips y links
    (`landing/<nombre>/`).
 
 ## Capturas reales (recomendado)
