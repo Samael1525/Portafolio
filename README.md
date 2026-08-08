@@ -10,7 +10,8 @@ Portafolio de landing pages creadas con **HTML, CSS y JavaScript** puro (sin fra
 ```
 ├── index.html              ← Vitrina (portafolio)
 ├── css/portfolio.css       ← Estilos de la vitrina
-├── assets/LOGO_AYNI.svg    ← Logo de marca
+├── assets/LOGO_AYNI.svg    ← Icono de marca
+├── assets/AYNI_TEXT.svg    ← Wordmark (texto) de marca
 ├── assets/thumbs/          ← Capturas reales de cada landing
 ├── landing/
 │   ├── turismoxyz/         ← Landing de agencia de viajes

@@ -241,20 +241,29 @@ p {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 12px;
 }
 
 .brand-logo {
-  height: 68px;
+  height: 56px;
   width: auto;
   display: block;
   transition: transform 0.25s var(--ease-out);
 }
 
-.brand:hover .brand-logo {
+.brand-word {
+  height: 22px;
+  width: auto;
+  display: block;
+  transition: transform 0.25s var(--ease-out);
+}
+
+.brand:hover .brand-logo,
+.brand:hover .brand-word {
   transform: scale(1.04);
 }
 
-[data-theme="dark"] .brand-logo {
+[data-theme="dark"] .brand img {
   filter: brightness(0) invert(1);
 }
 
@@ -907,7 +916,11 @@ p {
 }
 
 .footer-brand .brand-logo {
-  height: 60px;
+  height: 46px;
+}
+
+.footer-brand .brand-word {
+  height: 18px;
 }
 
 .footer-brand p {
@@ -1118,6 +1131,18 @@ p {
 }
 
 @media (max-width: 480px) {
+  .brand-logo {
+    height: 44px;
+  }
+
+  .brand-word {
+    height: 17px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
   .hero-actions .btn {
     width: 100%;
   }
