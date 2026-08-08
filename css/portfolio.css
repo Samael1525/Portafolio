@@ -241,26 +241,30 @@ p {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .brand-logo {
-  height: 56px;
+  height: 40px;
   width: auto;
   display: block;
   transition: transform 0.25s var(--ease-out);
 }
 
 .brand-word {
-  height: 22px;
+  height: 17px;
   width: auto;
   display: block;
+  transform: translateY(-1px);
   transition: transform 0.25s var(--ease-out);
 }
 
-.brand:hover .brand-logo,
-.brand:hover .brand-word {
+.brand:hover .brand-logo {
   transform: scale(1.04);
+}
+
+.brand:hover .brand-word {
+  transform: translateY(-1px) scale(1.04);
 }
 
 [data-theme="dark"] .brand img {
@@ -916,11 +920,11 @@ p {
 }
 
 .footer-brand .brand-logo {
-  height: 46px;
+  height: 34px;
 }
 
 .footer-brand .brand-word {
-  height: 18px;
+  height: 14px;
 }
 
 .footer-brand p {
@@ -1132,15 +1136,15 @@ p {
 
 @media (max-width: 480px) {
   .brand-logo {
-    height: 44px;
+    height: 32px;
   }
 
   .brand-word {
-    height: 17px;
+    height: 13px;
   }
 
   .brand {
-    gap: 9px;
+    gap: 8px;
   }
 
   .hero-actions .btn {
