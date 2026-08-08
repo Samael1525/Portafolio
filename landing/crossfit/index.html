@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IronBox CrossFit — Entrenamiento funcional, fuerza y crossfit en Huaraz. Primera clase gratis, sin excusas.">
+    <title>IronBox CrossFit | No hay excusas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+
+    <!-- Intro letterbox al cargar -->
+    <div class="intro" id="intro" aria-hidden="true">
+        <span class="intro-flash"></span>
+    </div>
+
+    <!-- Barra para volver al portafolio AYNIT -->
+    <a href="../../index.html" class="back-bar" title="Volver al portafolio AYNIT">
+        <i class="fa-solid fa-arrow-left"></i> <span>Volver al portafolio</span>
+    </a>
+
+    <!-- ======================= HEADER ======================= -->
+    <header id="header" class="site-header">
+        <div class="container nav-inner">
+            <a href="#inicio" class="logo" aria-label="IronBox CrossFit — Inicio">
+                <span class="logo-mark">IB</span>
+                <span class="logo-text">IRON<span class="accent">BOX</span></span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/51999999999" class="btn btn-ghost" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i> Clase gratis
+                </a>
+                <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Navegación móvil">
+        <div class="nav-mobile-head">
+            <a href="#inicio" class="logo">
+                <span class="logo-mark">IB</span>
+                <span class="logo-text">IRON<span class="accent">BOX</span></span>
+            </a>
+            <button id="nav-close" class="icon-btn nav-close" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="nav-mobile-links">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#programas">Programas</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#entrenadores">Entrenadores</a>
+            <a href="#planes">Planes</a>
+            <a href="#reserva">Clase gratis</a>
+        </div>
+        <div class="nav-mobile-foot">
+            <a href="https://wa.me/51999999999" class="btn btn-acid btn-lg" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i> Reservar mi clase
+            </a>
+            <div class="social">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <small>© IronBox CrossFit · Huaraz, Perú</small>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ======================= HERO ======================= -->
+        <section id="inicio" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-left">
+                    <p class="kicker mono">Est. 2018 — Huaraz, Perú</p>
+
+                    <h1 class="hero-title bebas">
+                        <span class="hero-line"><span>No hay</span></span>
+                        <span class="hero-line"><span class="txt-outline">excusas</span></span>
+                    </h1>
+
+                    <p class="hero-sub">
+                        Crossfit, fuerza y acondicionamiento para la gente de verdad.
+                        Sin frills ni promesas vacías: sudor, disciplina y resultados.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://wa.me/51999999999" class="btn btn-acid btn-lg" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-bolt"></i> Clase de prueba gratis
+                        </a>
+                        <a href="#planes" class="btn btn-ghost btn-lg">Ver planes</a>
+                    </div>
+
+                    <div class="hero-meta mono">
+                        <span><i class="fa-solid fa-clock"></i> LUN–SÁB 06:00–22:00</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Jr. Bolognesi 245</span>
+                        <span><i class="fa-solid fa-arrow-trend-up"></i> Desde S/ 120/mes</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <span class="hero-num bebas" aria-hidden="true">IB</span>
+                    <div class="hero-frame">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=80" alt="Atleta entrenando en IronBox">
+                        <div class="frame-shade"></div>
+                        <span class="hero-tag bebas">Clase 1<br><span class="accent">gratis</span></span>
+                    </div>
+                    <span class="hero-vert mono" aria-hidden="true">IRONBOX — CROSSFIT — HUARAZ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= MARQUEE ======================= -->
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span class="ticker-item bebas">No excusas <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Sweat <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Repeat <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Levántate <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Rompe límites <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">No excusas <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Sweat <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Repeat <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Levántate <i class="fa-solid fa-asterisk"></i></span>
+                <span class="ticker-item bebas">Rompe límites <i class="fa-solid fa-asterisk"></i></span>
+            </div>
+        </div>
+
+        <!-- ======================= NOSOTROS ======================= -->
+        <section id="nosotros" class="section">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <p class="mono-label">01 / Nosotros</p>
+                    <h2 class="bebas sec-title">Aquí no vendemos promesas. <span class="accent">Forjamos carácter.</span></h2>
+                    <p class="sec-sub">
+                        IronBox es una caja de entrenamiento funcional donde cada sesión se programa,
+                        se mide y se ejecuta en comunidad. No importa de dónde empiezas: importa
+                        que empieces hoy.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-media reveal">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1100&q=80" alt="Interior del gimnasio IronBox">
+                        <span class="about-mark bebas">EST.<br>2018</span>
+                    </div>
+
+                    <div class="about-counters reveal">
+                        <div class="counter">
+                            <div class="counter-num bebas" data-count="320">0</div>
+                            <div class="counter-label mono">Miembros activos</div>
+                        </div>
+                        <div class="counter">
+                            <div class="counter-num bebas" data-count="32">0</div>
+                            <div class="counter-label mono">Clases / semana</div>
+                        </div>
+                        <div class="counter">
+                            <div class="counter-num bebas" data-count="6">0</div>
+                            <div class="counter-label mono">Entrenadores</div>
+                        </div>
+                        <div class="counter">
+                            <div class="counter-num bebas" data-count="8">0</div>
+                            <div class="counter-label mono">Años entrenando</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PROGRAMAS ======================= -->
+        <section id="programas" class="section section-alt">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <p class="mono-label">02 / Programas</p>
+                    <h2 class="bebas sec-title">Elige tu <span class="accent">modo</span></h2>
+                    <p class="sec-sub">Cuatro líneas de entrenamiento. Una sola regla: aparecer.</p>
+                </div>
+
+                <div class="prog-list">
+                    <a href="https://wa.me/51999999999" class="prog-row reveal" target="_blank" rel="noopener">
+                        <span class="prog-num bebas">01</span>
+                        <div class="prog-body">
+                            <h3 class="bebas">CrossFit</h3>
+                            <p>WODs diarios, técnica sobre la marcha y una comunidad que no te deja bajar.</p>
+                        </div>
+                        <span class="prog-meta mono">LUN–SÁB · 1 HORA</span>
+                        <span class="prog-price bebas">S/150<small>/mes</small></span>
+                        <span class="prog-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+
+                    <a href="https://wa.me/51999999999" class="prog-row reveal" target="_blank" rel="noopener">
+                        <span class="prog-num bebas">02</span>
+                        <div class="prog-body">
+                            <h3 class="bebas">Fuerza</h3>
+                            <p>Peso muerto, sentadilla y press con programación progresiva y seguimiento.</p>
+                        </div>
+                        <span class="prog-meta mono">LUN · MIÉ · VIE</span>
+                        <span class="prog-price bebas">S/130<small>/mes</small></span>
+                        <span class="prog-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+
+                    <a href="https://wa.me/51999999999" class="prog-row reveal" target="_blank" rel="noopener">
+                        <span class="prog-num bebas">03</span>
+                        <div class="prog-body">
+                            <h3 class="bebas">HIIT</h3>
+                            <p>Intervalos de alta intensidad para quemar calorías y subir tu rendimiento.</p>
+                        </div>
+                        <span class="prog-meta mono">MAR · JUE · SÁB</span>
+                        <span class="prog-price bebas">S/120<small>/mes</small></span>
+                        <span class="prog-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+
+                    <a href="https://wa.me/51999999999" class="prog-row reveal" target="_blank" rel="noopener">
+                        <span class="prog-num bebas">04</span>
+                        <div class="prog-body">
+                            <h3 class="bebas">Movilidad</h3>
+                            <p>Flexibilidad, movilidad articular y prevención de lesiones. Recupérate mejor.</p>
+                        </div>
+                        <span class="prog-meta mono">DOM · 09:00</span>
+                        <span class="prog-price bebas">INC<small>/incluido</small></span>
+                        <span class="prog-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= HORARIOS ======================= -->
+        <section id="horarios" class="section">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <p class="mono-label">03 / Horarios</p>
+                    <h2 class="bebas sec-title">La semana <span class="accent">en la caja</span></h2>
+                    <p class="sec-sub">Elige tu hora. Tu excusa se queda en la puerta.</p>
+                </div>
+
+                <div class="schedule reveal">
+                    <div class="sch-row sch-head">
+                        <span class="sch-hour mono">Hora</span>
+                        <span class="sch-cell mono">Lun</span>
+                        <span class="sch-cell mono">Mar</span>
+                        <span class="sch-cell mono">Mié</span>
+                        <span class="sch-cell mono">Jue</span>
+                        <span class="sch-cell mono">Vie</span>
+                        <span class="sch-cell mono">Sáb</span>
+                    </div>
+                    <div class="sch-row">
+                        <span class="sch-hour mono">06:00</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Fuerza</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Fuerza</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                    </div>
+                    <div class="sch-row">
+                        <span class="sch-hour mono">07:30</span>
+                        <span class="sch-cell bebas">HIIT</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">HIIT</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">HIIT</span>
+                        <span class="sch-cell bebas sch-hot">Cross</span>
+                    </div>
+                    <div class="sch-row">
+                        <span class="sch-hour mono">09:00</span>
+                        <span class="sch-cell bebas">Mobil</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                        <span class="sch-cell bebas">Wod</span>
+                    </div>
+                    <div class="sch-row">
+                        <span class="sch-hour mono">17:00</span>
+                        <span class="sch-cell bebas">Fuerza</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Fuerza</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Fuerza</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                    </div>
+                    <div class="sch-row">
+                        <span class="sch-hour mono">18:30</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">HIIT</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">HIIT</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Wod</span>
+                    </div>
+                    <div class="sch-row">
+                        <span class="sch-hour mono">20:00</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">HIIT</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas">Cross</span>
+                        <span class="sch-cell bebas sch-off">—</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= ENTRENADORES ======================= -->
+        <section id="entrenadores" class="section section-alt">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <p class="mono-label">04 / Entrenadores</p>
+                    <h2 class="bebas sec-title">El equipo que <span class="accent">te exige</span></h2>
+                    <p class="sec-sub">Coach certificados que conocen tu nombre y tu progreso.</p>
+                </div>
+
+                <div class="coach-grid">
+                    <article class="coach reveal">
+                        <div class="coach-media">
+                            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Entrenador Marco Ramos">
+                        </div>
+                        <h3 class="bebas">Marco Ramos</h3>
+                        <p class="mono">CrossFit L2 · Metodología</p>
+                    </article>
+                    <article class="coach reveal">
+                        <div class="coach-media">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Entrenadora Luz Vargas">
+                        </div>
+                        <h3 class="bebas">Luz Vargas</h3>
+                        <p class="mono">Fuerza · Halterofilia</p>
+                    </article>
+                    <article class="coach reveal">
+                        <div class="coach-media">
+                            <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=800&q=80" alt="Entrenador Diego Torres">
+                        </div>
+                        <h3 class="bebas">Diego Torres</h3>
+                        <p class="mono">HIIT · Acondicionamiento</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PLANES ======================= -->
+        <section id="planes" class="section">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <p class="mono-label">05 / Planes</p>
+                    <h2 class="bebas sec-title">Elige tu <span class="accent">nivel de compromiso</span></h2>
+                    <p class="sec-sub">Sin contratos de permanencia. Cancela cuando quieras.</p>
+                </div>
+
+                <div class="plan-grid">
+                    <article class="plan reveal">
+                        <p class="plan-name bebas">Basic</p>
+                        <p class="plan-price bebas">S/120<small>mes</small></p>
+                        <ul class="plan-feats mono">
+                            <li><i class="fa-solid fa-check"></i> 3 clases / semana</li>
+                            <li><i class="fa-solid fa-check"></i> Acceso a la sala</li>
+                            <li><i class="fa-solid fa-check"></i> Locker y duchas</li>
+                        </ul>
+                        <a href="https://wa.me/51999999999" class="btn btn-ghost" target="_blank" rel="noopener">Empezar</a>
+                    </article>
+
+                    <article class="plan plan-hot reveal">
+                        <span class="plan-flag mono">Más elegido</span>
+                        <p class="plan-name bebas">Unlimited</p>
+                        <p class="plan-price bebas">S/150<small>mes</small></p>
+                        <ul class="plan-feats mono">
+                            <li><i class="fa-solid fa-check"></i> Clases ilimitadas</li>
+                            <li><i class="fa-solid fa-check"></i> Programas Cross / Fuerza</li>
+                            <li><i class="fa-solid fa-check"></i> Evaluación inicial gratis</li>
+                            <li><i class="fa-solid fa-check"></i> Locker y duchas</li>
+                        </ul>
+                        <a href="https://wa.me/51999999999" class="btn btn-acid" target="_blank" rel="noopener">Empezar</a>
+                    </article>
+
+                    <article class="plan reveal">
+                        <p class="plan-name bebas">Elite</p>
+                        <p class="plan-price bebas">S/190<small>mes</small></p>
+                        <ul class="plan-feats mono">
+                            <li><i class="fa-solid fa-check"></i> Todo Unlimited</li>
+                            <li><i class="fa-solid fa-check"></i> Coach 1:1 mensual</li>
+                            <li><i class="fa-solid fa-check"></i> Plan nutricional</li>
+                            <li><i class="fa-solid fa-check"></i> Valoración trimestral</li>
+                        </ul>
+                        <a href="https://wa.me/51999999999" class="btn btn-ghost" target="_blank" rel="noopener">Empezar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= RESERVA ======================= -->
+        <section id="reserva" class="cta">
+            <div class="cta-bg">
+                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=1920&q=80" alt="Deportista con barra en IronBox">
+            </div>
+            <div class="cta-shade"></div>
+
+            <div class="container cta-inner reveal">
+                <p class="mono-label mono-on">Última fila de la semana</p>
+                <h2 class="bebas cta-title">Tu primera clase<br>la pagamos <span class="accent">nosotros</span>.</h2>
+                <p class="cta-sub">
+                    Ven, entrena, decide. Solo 15 cupos por semana para clase de prueba.
+                </p>
+                <a href="https://wa.me/51999999999" class="btn btn-acid btn-lg" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i> Reservar mi clase gratis
+                </a>
+                <p class="cta-note mono">WhatsApp · Respuesta en menos de 15 min</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="site-footer">
+        <div class="footer-mark bebas" aria-hidden="true">IronBox</div>
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-mark">IB</span>
+                        <span class="logo-text">IRON<span class="accent">BOX</span></span>
+                    </a>
+                    <p class="footer-about">
+                        Caja de entrenamiento funcional en Huaraz. Disciplina, comunidad
+                        y resultados desde 2018.
+                    </p>
+                    <div class="social">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="mono">Explora</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#programas">Programas</a></li>
+                        <li><a href="#horarios">Horarios</a></li>
+                        <li><a href="#entrenadores">Entrenadores</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="mono">Contacto</h4>
+                    <ul>
+                        <li><a href="https://wa.me/51999999999" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +51 999 999 999</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> hola@ironboxfit.pe</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Jr. Bolognesi 245, Huaraz</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="mono">Horario</h4>
+                    <ul>
+                        <li><span>LUN – VIE</span> · 06:00 – 22:00</li>
+                        <li><span>SÁB</span> · 07:00 – 14:00</li>
+                        <li><span>DOM</span> · Solo Movilidad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="year">2026</span> IronBox CrossFit. Todos los derechos reservados.</span>
+                <span class="mono">NO EXCUSES — ONLY PROGRESS</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================= VOLVER ARRIBA ======================= -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        (function () {
+            "use strict";
+
+            /* ---------- Intro letterbox ---------- */
+            var intro = document.getElementById("intro");
+            if (intro) {
+                setTimeout(function () {
+                    intro.classList.add("done");
+                }, 250);
+                setTimeout(function () {
+                    if (intro.parentNode) intro.parentNode.removeChild(intro);
+                }, 1800);
+            }
+
+            /* ---------- Header al hacer scroll + volver arriba ---------- */
+            var header = document.getElementById("header");
+            var backToTop = document.getElementById("back-to-top");
+
+            function onScroll() {
+                var y = window.scrollY || window.pageYOffset;
+                if (header) header.classList.toggle("scrolled", y > 40);
+                if (backToTop) backToTop.classList.toggle("show", y > 700);
+            }
+            window.addEventListener("scroll", onScroll, { passive: true });
+            onScroll();
+
+            if (backToTop) {
+                backToTop.addEventListener("click", function () {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            }
+
+            /* ---------- Menú móvil ---------- */
+            var nav = document.getElementById("nav-mobile");
+            var navToggle = document.getElementById("nav-toggle");
+            var navClose = document.getElementById("nav-close");
+            var overlay = document.createElement("div");
+            overlay.className = "nav-overlay";
+            document.body.appendChild(overlay);
+
+            function closeNav() {
+                if (!nav) return;
+                nav.classList.remove("open");
+                if (navToggle) navToggle.classList.remove("active");
+                overlay.classList.remove("show");
+                if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+                document.body.style.overflow = "";
+            }
+
+            function toggleNav() {
+                var open = nav.classList.toggle("open");
+                if (navToggle) navToggle.classList.toggle("active", open);
+                overlay.classList.toggle("show", open);
+                if (navToggle) navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+                document.body.style.overflow = open ? "hidden" : "";
+            }
+
+            if (nav && navToggle) {
+                navToggle.addEventListener("click", toggleNav);
+                overlay.addEventListener("click", closeNav);
+                if (navClose) navClose.addEventListener("click", closeNav);
+                nav.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", closeNav);
+                });
+            }
+            window.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") closeNav();
+            });
+
+            /* ---------- Scroll reveal ---------- */
+            var revealEls = document.querySelectorAll(".reveal");
+            if ("IntersectionObserver" in window && revealEls.length) {
+                var revealObserver = new IntersectionObserver(
+                    function (entries, obs) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("visible");
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+                );
+                revealEls.forEach(function (el) {
+                    revealObserver.observe(el);
+                });
+            } else {
+                revealEls.forEach(function (el) {
+                    el.classList.add("visible");
+                });
+            }
+
+            /* ---------- Contadores animados ---------- */
+            function animateCounter(el) {
+                var target = parseInt(el.dataset.count, 10) || 0;
+                var duration = 1600;
+                var start = null;
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    var progress = Math.min((timestamp - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.floor(eased * target);
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = target;
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            var counters = document.querySelectorAll(".counter-num");
+            if ("IntersectionObserver" in window && counters.length) {
+                var counterObserver = new IntersectionObserver(
+                    function (entries, obs) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                animateCounter(entry.target);
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.4 }
+                );
+                counters.forEach(function (el) {
+                    counterObserver.observe(el);
+                });
+            } else {
+                counters.forEach(function (el) {
+                    el.textContent = el.dataset.count || "0";
+                });
+            }
+
+            /* ---------- Parallax del CTA (solo escritorio) ---------- */
+            var ctaSection = document.getElementById("reserva");
+            var ctaImg = document.querySelector(".cta-bg img");
+            var canParallax = window.matchMedia && window.matchMedia("(min-width: 768px)").matches;
+            var rafPending = false;
+
+            function onParallax() {
+                rafPending = false;
+                if (!ctaSection || !ctaImg || !canParallax) return;
+                var r = ctaSection.getBoundingClientRect();
+                var vh = window.innerHeight;
+                if (r.bottom < 0 || r.top > vh) return;
+                var off = (vh - r.top) / (vh + r.height);
+                var y = (off - 0.5) * 80;
+                ctaImg.style.transform = "translate3d(0," + y.toFixed(1) + "px,0) scale(1.15)";
+            }
+
+            window.addEventListener("scroll", function () {
+                if (!rafPending) {
+                    rafPending = true;
+                    requestAnimationFrame(onParallax);
+                }
+            }, { passive: true });
+            onParallax();
+
+            /* ---------- Año dinámico ---------- */
+            var yearEl = document.getElementById("year");
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
+
+</html>

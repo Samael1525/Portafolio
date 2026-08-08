@@ -17,9 +17,9 @@ Portafolio de landing pages creadas con **HTML, CSS y JavaScript** puro (sin fra
 │   │   ├── index.html
 │   │   ├── css/styles.css
 │   │   └── js/script.js
-│   ├── cordillera/         ← Landing de tours por los Andes
+│   ├── crossfit/           ← Landing de gimnasio (IronBox CrossFit)
 │   │   ├── index.html
-│   │   └── css/style2.css
+│   │   └── css/style4.css
 │   └── hotel/              ← Landing de hospedaje (Hotel Mirador)
 │       ├── index.html
 │       └── css/style3.css
@@ -55,7 +55,7 @@ Las tarjetas de la vitrina usan imágenes de demostración. Para usar capturas r
 
 1. Abre cada landing en el navegador.
 2. Presiona `F12` → pestaña **Elements** → clic derecho en `<html>` → **Capture node screenshot**.
-3. Guarda la imagen como `assets/thumbs/<nombre>.jpg` (ej. `turismoxyz.jpg`, `cordillera.jpg`).
+3. Guarda la imagen como `assets/thumbs/<nombre>.jpg` (ej. `turismoxyz.jpg`, `crossfit.jpg`).
 4. En `index.html`, reemplaza el `src` de la imagen de esa tarjeta por `assets/thumbs/<nombre>.jpg`.
 
 ## Publicación (GitHub Pages)
