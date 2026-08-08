@@ -17,9 +17,12 @@ Portafolio de landing pages creadas con **HTML, CSS y JavaScript** puro (sin fra
 │   │   ├── index.html
 │   │   ├── css/styles.css
 │   │   └── js/script.js
-│   └── cordillera/         ← Landing de tours por los Andes
+│   ├── cordillera/         ← Landing de tours por los Andes
+│   │   ├── index.html
+│   │   └── css/style2.css
+│   └── hotel/              ← Landing de hospedaje (Hotel Mirador)
 │       ├── index.html
-│       └── css/style2.css
+│       └── css/style3.css
 ```
 
 ## Cómo agregar un nuevo landing (3 pasos)

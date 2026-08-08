@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Mirador — Hospedaje con encanto en Huaraz. Habitaciones cómodas, desayuno incluido y a pasos del centro.">
+    <title>Hotel Mirador | Tu descanso en los Andes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style3.css">
+
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("hotel-mirador-theme");
+                if (t !== "light" && t !== "dark") {
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            } catch (e) {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Barra para volver al portafolio AYNIT -->
+    <a href="../../index.html" class="back-bar" title="Volver al portafolio AYNIT">
+        <i class="fa-solid fa-arrow-left"></i> <span>Volver al portafolio</span>
+    </a>
+
+    <!-- ======================= HEADER ======================= -->
+    <header id="header" class="site-header">
+        <div class="container nav-inner">
+            <a href="#inicio" class="logo" aria-label="Hotel Mirador — Inicio">
+                <span class="logo-mark"><i class="fa-solid fa-hotel"></i></span>
+                Hotel<span>Mirador</span>
+            </a>
+
+            <nav id="nav" class="nav" aria-label="Navegación principal">
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#reserva">Reservar</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <a href="https://wa.me/51999999999" class="btn btn-wa" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i> Reservar
+                </a>
+                <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Navegación móvil">
+        <div class="nav-mobile-head">
+            <a href="#inicio" class="logo">
+                <span class="logo-mark"><i class="fa-solid fa-hotel"></i></span>
+                Hotel<span>Mirador</span>
+            </a>
+            <button id="nav-close" class="icon-btn nav-close" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="nav-mobile-links">
+            <a href="#habitaciones">Habitaciones</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#reserva">Reservar</a>
+        </div>
+        <div class="nav-mobile-foot">
+            <a href="https://wa.me/51999999999" class="btn btn-wa" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i> Reservar por WhatsApp
+            </a>
+            <div class="social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Tripadvisor"><i class="fa-solid fa-compass"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <small>© Hotel Mirador · Huaraz, Perú</small>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ======================= HERO ======================= -->
+        <section id="inicio" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-mug-hot"></i> Desayuno incluido · Wi-Fi gratis</span>
+                    <h1>Tu descanso en el <span class="grad">corazón de los Andes</span></h1>
+                    <p class="hero-sub">
+                        Habitaciones cálidas, atención familiar y ubicación perfecta
+                        a pasos del centro de Huaraz. Despierta listo para tu aventura.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/51999999999" class="btn btn-wa" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i> Reservar ahora
+                        </a>
+                        <a href="#habitaciones" class="btn btn-ghost"><i class="fa-solid fa-bed"></i> Ver habitaciones</a>
+                    </div>
+                    <div class="hero-trust">
+                        <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <small>4.9/5 · +1,200 reseñas · Tripadvisor</small>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img class="main-img" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Exterior del hotel con piscina">
+
+                    <div class="float-card fc-1">
+                        <span class="fc-icon gold"><i class="fa-solid fa-map-location-dot"></i></span>
+                        <div>
+                            <strong>Centro de Huaraz</strong>
+                            <small>a 3 cuadras</small>
+                        </div>
+                    </div>
+
+                    <div class="float-card fc-2">
+                        <span class="fc-icon gold"><i class="fa-solid fa-couch"></i></span>
+                        <div>
+                            <strong>Habitaciones acogedoras</strong>
+                            <small>con vista a la montaña</small>
+                        </div>
+                    </div>
+
+                    <div class="float-card fc-3">
+                        <span class="fc-icon gold"><i class="fa-solid fa-shield-halved"></i></span>
+                        <div>
+                            <strong>Seguridad 24/7</strong>
+                            <small>recepción siempre abierta</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= ESTADÍSTICAS ======================= -->
+        <section class="stats" aria-label="Estadísticas del hotel">
+            <div class="container stats-grid">
+                <div class="stat">
+                    <div class="num" data-count="20">0</div>
+                    <small>Habitaciones</small>
+                </div>
+                <div class="stat">
+                    <div class="num" data-count="12000">0</div>
+                    <small>Huéspedes felices</small>
+                </div>
+                <div class="stat">
+                    <div class="num" data-count="15">0</div>
+                    <small>Años de experiencia</small>
+                </div>
+                <div class="stat">
+                    <div class="num" data-count="98">0</div>
+                    <small>% de huéspedes que vuelven</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= HABITACIONES ======================= -->
+        <section id="habitaciones" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-bed"></i> Habitaciones</span>
+                    <h2>Descansa como en casa</h2>
+                    <p>Camas confortables, agua caliente 24/7 y el mejor descanso antes de tu expedición.</p>
+                </div>
+
+                <div class="rooms-grid">
+                    <article class="room-card reveal">
+                        <div class="room-media">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Habitación Deluxe">
+                            <span class="room-badge"><i class="fa-solid fa-seedling"></i> Económica</span>
+                        </div>
+                        <div class="room-body">
+                            <h3>Habitación Deluxe</h3>
+                            <div class="room-meta">
+                                <span><i class="fa-solid fa-users"></i> 2 personas</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 18 m²</span>
+                                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p>Perfecta para viajeros: cama queen, baño privado y desayuno incluido.</p>
+                            <div class="room-foot">
+                                <span class="price">S/ 150 <small>/ noche</small></span>
+                                <a href="https://wa.me/51999999999" class="btn btn-wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="room-card reveal reveal-delay-1">
+                        <div class="room-media">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Suite Mirador">
+                            <span class="room-badge"><i class="fa-solid fa-fire"></i> Más popular</span>
+                        </div>
+                        <div class="room-body">
+                            <h3>Suite Mirador</h3>
+                            <div class="room-meta">
+                                <span><i class="fa-solid fa-users"></i> 3 personas</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 26 m²</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p>Vista panorámica a la Cordillera Blanca, cama king y sala de estar.</p>
+                            <div class="room-foot">
+                                <span class="price">S/ 240 <small>/ noche</small></span>
+                                <a href="https://wa.me/51999999999" class="btn btn-wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="room-card reveal reveal-delay-2">
+                        <div class="room-media">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Suite Presidencial">
+                            <span class="room-badge"><i class="fa-solid fa-crown"></i> Premium</span>
+                        </div>
+                        <div class="room-body">
+                            <h3>Suite Presidencial</h3>
+                            <div class="room-meta">
+                                <span><i class="fa-solid fa-users"></i> 4 personas</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 40 m²</span>
+                                <span><i class="fa-solid fa-star"></i> 5.0</span>
+                            </div>
+                            <p>Amplio salón, jacuzzi, dos dormitorios y el mejor atardecer de Huaraz.</p>
+                            <div class="room-foot">
+                                <span class="price">S/ 390 <small>/ noche</small></span>
+                                <a href="https://wa.me/51999999999" class="btn btn-wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= SERVICIOS ======================= -->
+        <section id="servicios" class="section section-tinted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-handshake"></i> Servicios</span>
+                    <h2>Todo lo que necesitas, incluido</h2>
+                    <p>Comodidades pensadas para que tu estadía sea perfecta de principio a fin.</p>
+                </div>
+
+                <div class="serv-grid">
+                    <article class="serv-card reveal">
+                        <span class="serv-icon gold"><i class="fa-solid fa-wifi"></i></span>
+                        <h3>Wi-Fi de alta velocidad</h3>
+                        <p>Internet estable en todo el hotel para que trabajes o compartas tu viaje.</p>
+                    </article>
+                    <article class="serv-card reveal reveal-delay-1">
+                        <span class="serv-icon gold"><i class="fa-solid fa-mug-hot"></i></span>
+                        <h3>Desayuno buffet</h3>
+                        <p>Fruta fresca, panes artesanales, huevos andinos y café de especialidad.</p>
+                    </article>
+                    <article class="serv-card reveal reveal-delay-2">
+                        <span class="serv-icon gold"><i class="fa-solid fa-car"></i></span>
+                        <h3>Estacionamiento privado</h3>
+                        <p>Garaje techado y seguro para tu vehículo, con vigilancia permanente.</p>
+                    </article>
+                    <article class="serv-card reveal reveal-delay-1">
+                        <span class="serv-icon gold"><i class="fa-solid fa-person-hiking"></i></span>
+                        <h3>Tours y traslados</h3>
+                        <p>Coordinamos tu recogida, aclimatación y tours a la Cordillera Blanca.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= GALERÍA ======================= -->
+        <section id="galeria" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-images"></i> Galería</span>
+                    <h2>Un vistazo a tu estadía</h2>
+                    <p>Los espacios que te esperan en el Hotel Mirador.</p>
+                </div>
+
+                <div class="galeria-grid">
+                    <figure class="g-item tall reveal">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Piscina del hotel">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Piscina climatizada</figcaption>
+                    </figure>
+                    <figure class="g-item reveal">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Habitación acogedora">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Habitación Deluxe</figcaption>
+                    </figure>
+                    <figure class="g-item reveal reveal-delay-1">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Restaurante">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Nuestro restaurante</figcaption>
+                    </figure>
+                    <figure class="g-item wide reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80" alt="Terraza con vista">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Terraza Mirador</figcaption>
+                    </figure>
+                    <figure class="g-item reveal">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80" alt="Exterior del hotel">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Fachada principal</figcaption>
+                    </figure>
+                    <figure class="g-item tall reveal reveal-delay-1">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Desayuno">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Desayuno buffet</figcaption>
+                    </figure>
+                    <figure class="g-item reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80" alt="Habitación con vista">
+                        <figcaption class="g-caption"><i class="fa-solid fa-location-dot"></i> Vistas a la montaña</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= OPINIONES ======================= -->
+        <section id="opiniones" class="section section-tinted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-heart"></i> Opiniones</span>
+                    <h2>Lo que dicen nuestros huéspedes</h2>
+                    <p>La mejor publicidad es un huésped que vuelve y lo recomienda.</p>
+                </div>
+
+                <div class="opiniones-grid">
+                    <article class="opinion reveal">
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Ubicación perfecta y un trato familiar increíble. El desayuno es delicioso y las camas, súper cómodas."</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Foto de Daniela Quispe">
+                            <div>
+                                <strong>Daniela Quispe</strong>
+                                <small>Se hospedó 3 noches</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="opinion reveal reveal-delay-1">
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p>"Nos ayudaron a organizar todos los tours. Agua caliente todo el día y una vista espectacular al despertar."</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Foto de Pedro Llanos">
+                            <div>
+                                <strong>Pedro Llanos</strong>
+                                <small>Viaje en pareja</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="opinion reveal reveal-delay-2">
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                        <p>"Volvería sin pensarlo. Limpieza impecable, estacionamiento seguro y recepción disponible a cualquier hora."</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Foto de Rosa Huamán">
+                            <div>
+                                <strong>Rosa Huamán</strong>
+                                <small>Huésped frecuente</small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= RESERVA ======================= -->
+        <section id="reserva" class="section">
+            <div class="container">
+                <div class="reserva-card reveal">
+                    <div class="reserva-content">
+                        <span class="eyebrow"><i class="fa-solid fa-calendar-check"></i> Reserva</span>
+                        <h2>¿Listo para tu próxima noche?</h2>
+                        <p>Reserva directo por WhatsApp y obtén la mejor tarifa garantizada, sin intermediarios.</p>
+                        <a href="https://wa.me/51999999999" class="btn btn-wa btn-lg" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i> Reservar por WhatsApp
+                        </a>
+                        <ul class="c-list">
+                            <li><i class="fa-solid fa-location-dot"></i> Jr. Bolognesi 245, Huaraz</li>
+                            <li><i class="fa-solid fa-phone"></i> +51 999 999 999</li>
+                            <li><i class="fa-solid fa-envelope"></i> reservas@hotelmirador.pe</li>
+                            <li><i class="fa-solid fa-clock"></i> Check-in 12:00 · Check-out 10:00</li>
+                        </ul>
+                    </div>
+                    <div class="reserva-visual">
+                        <img src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?auto=format&fit=crop&w=900&q=80" alt="Habitación del Hotel Mirador">
+                        <div class="reserva-float">
+                            <span class="fc-icon gold"><i class="fa-solid fa-check"></i></span>
+                            <div>
+                                <strong>Mejor tarifa garantizada</strong>
+                                <small>reserva directa</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-hotel"></i></span>
+                        Hotel<span>Mirador</span>
+                    </a>
+                    <p class="footer-about">
+                        Hospedaje familiar en Huaraz, comprometido con el descanso
+                        y la aventura de nuestros huéspedes desde hace más de 15 años.
+                    </p>
+                    <div class="social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Tripadvisor"><i class="fa-solid fa-compass"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="#habitaciones">Habitaciones</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#opiniones">Opiniones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de cancelación</a></li>
+                        <li><a href="#">Tarifas y promociones</a></li>
+                        <li><a href="#reserva">Reservar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="https://wa.me/51999999999" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +51 999 999 999</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> reservas@hotelmirador.pe</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Jr. Bolognesi 245, Huaraz</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="year">2026</span> Hotel Mirador. Todos los derechos reservados.</span>
+                <span class="made">Hecho con <i class="fa-solid fa-heart"></i> en Huaraz</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================= VOLVER ARRIBA ======================= -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        (function () {
+            "use strict";
+
+            var root = document.documentElement;
+
+            /* ---------- Tema claro/oscuro ---------- */
+            var THEME_KEY = "hotel-mirador-theme";
+            var themeToggle = document.getElementById("theme-toggle");
+
+            function applyTheme(theme) {
+                root.setAttribute("data-theme", theme);
+                var label = theme === "dark" ? "Activar modo claro" : "Activar modo noche";
+                if (themeToggle) {
+                    themeToggle.setAttribute("aria-label", label);
+                    themeToggle.title = label;
+                }
+            }
+
+            applyTheme(root.getAttribute("data-theme"));
+
+            if (themeToggle) {
+                themeToggle.addEventListener("click", function () {
+                    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+                    applyTheme(next);
+                    try {
+                        localStorage.setItem(THEME_KEY, next);
+                    } catch (e) { /* sin almacenamiento */ }
+                });
+            }
+
+            /* ---------- Header al hacer scroll ---------- */
+            var header = document.getElementById("header");
+            var backToTop = document.getElementById("back-to-top");
+
+            function onScroll() {
+                var y = window.scrollY || window.pageYOffset;
+                if (header) header.classList.toggle("scrolled", y > 40);
+                if (backToTop) backToTop.classList.toggle("show", y > 600);
+            }
+            window.addEventListener("scroll", onScroll, { passive: true });
+            onScroll();
+
+            if (backToTop) {
+                backToTop.addEventListener("click", function () {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            }
+
+            /* ---------- Menú móvil ---------- */
+            var nav = document.getElementById("nav-mobile");
+            var navToggle = document.getElementById("nav-toggle");
+            var navClose = document.getElementById("nav-close");
+            var overlay = document.createElement("div");
+            overlay.className = "nav-overlay";
+            document.body.appendChild(overlay);
+
+            function closeNav() {
+                if (!nav) return;
+                nav.classList.remove("open");
+                if (navToggle) navToggle.classList.remove("active");
+                overlay.classList.remove("show");
+                if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+                document.body.style.overflow = "";
+            }
+
+            function toggleNav() {
+                var open = nav.classList.toggle("open");
+                if (navToggle) navToggle.classList.toggle("active", open);
+                overlay.classList.toggle("show", open);
+                if (navToggle) navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+                document.body.style.overflow = open ? "hidden" : "";
+            }
+
+            if (nav && navToggle) {
+                navToggle.addEventListener("click", toggleNav);
+                overlay.addEventListener("click", closeNav);
+                if (navClose) navClose.addEventListener("click", closeNav);
+                nav.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", closeNav);
+                });
+            }
+            window.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") closeNav();
+            });
+
+            /* ---------- Scroll reveal ---------- */
+            var revealEls = document.querySelectorAll(".reveal");
+            if ("IntersectionObserver" in window && revealEls.length) {
+                var revealObserver = new IntersectionObserver(
+                    function (entries, obs) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("visible");
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+                );
+                revealEls.forEach(function (el) {
+                    revealObserver.observe(el);
+                });
+            } else {
+                revealEls.forEach(function (el) {
+                    el.classList.add("visible");
+                });
+            }
+
+            /* ---------- Contadores animados ---------- */
+            function animateCounter(el) {
+                var target = parseInt(el.dataset.count, 10) || 0;
+                var duration = 1800;
+                var start = null;
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    var progress = Math.min((timestamp - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.floor(eased * target).toLocaleString("es");
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = target.toLocaleString("es");
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            var counters = document.querySelectorAll(".stat .num");
+            if ("IntersectionObserver" in window && counters.length) {
+                var counterObserver = new IntersectionObserver(
+                    function (entries, obs) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                animateCounter(entry.target);
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.5 }
+                );
+                counters.forEach(function (el) {
+                    counterObserver.observe(el);
+                });
+            } else {
+                counters.forEach(function (el) {
+                    el.textContent = (parseInt(el.dataset.count, 10) || 0).toLocaleString("es");
+                });
+            }
+
+            /* ---------- Año dinámico ---------- */
+            var yearEl = document.getElementById("year");
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
+
+</html>
