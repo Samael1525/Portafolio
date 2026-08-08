@@ -16,7 +16,7 @@
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
 
-  --header-h: 72px;
+  --header-h: 88px;
 
   /* Tema claro: cálido, terroso y suave */
   --bg: #faf7f1;
@@ -244,7 +244,7 @@ p {
 }
 
 .brand-logo {
-  height: 48px;
+  height: 68px;
   width: auto;
   display: block;
   transition: transform 0.25s var(--ease-out);
@@ -907,7 +907,7 @@ p {
 }
 
 .footer-brand .brand-logo {
-  height: 44px;
+  height: 60px;
 }
 
 .footer-brand p {
